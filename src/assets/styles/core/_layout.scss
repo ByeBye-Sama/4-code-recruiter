@@ -1,0 +1,29 @@
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: $layout-desktop;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .social-media {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer {
+  .container {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+  }
+}

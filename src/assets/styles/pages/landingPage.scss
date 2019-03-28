@@ -1,1 +1,39 @@
-@import '../core/main';
+@import "../core/main";
+
+.header {
+  padding: $s3;
+
+  p {
+    margin: 0;
+    font-size: $font-size-hf;
+    font-family: $font-exo;
+  }
+
+  .header-logo {
+    height: 40px;
+  }
+  .social-media {
+    .social-media-logo {
+      font-size: $font-size-social;
+      padding: $s1;
+      i {
+        padding: 0 $s02;
+      }
+    }
+  }
+}
+
+.main {
+  margin: $s4 0;
+}
+
+.footer {
+  padding: $s4;
+  p {
+    margin: 0;
+    font-size: $font-size-hf;
+  }
+  .footer-logo {
+    height: 20px;
+  }
+}

@@ -1,31 +1,34 @@
+/*--url---------------------------------------------------------------*/
 
- /*--url---------------------------------------------------------------*/
-
-$url-dist : '..';
-$url-public-fonts : '../fonts';
+$url-dist: "..";
+$url-public-fonts: "../fonts";
 
 /*--font---------------------------------------------------------------*/
 
-$font-primary: 'Exo';
-$font-secondary: 'Verdana';
-$font-global: 'Arial';
+$font-exo: "Exo";
+$font-arial: "Arial";
 
-$font-base-size : 62.5%; /* 10px*/
-$font-body-size : 1.3rem; 		/* 13px*/
-$font-heading : $font-primary;
-$font-text : $font-secondary;
-
+$font-size-base: 62.5%; /* 10px*/
+$font-size-global: 1.6rem;
+$font-size-hf: 1.2rem;
+$font-size-social: 2.0rem;
 
 /*--typography---------------------------------------------------------------*/
 
 /*--buttons---------------------------------------------------------------*/
 
-$button-bg-primary: '';
-$button-bg-secondary: '';
+$button-bg-primary: "";
+$button-bg-secondary: "";
 
 /*--forms---------------------------------------------------------------*/
 
 /*--color---------------------------------------------------------------*/
+
+$color-fonts: (
+  primary: #0d3964
+);
+
+$color-txt-prim: map-get($color-fonts, primary);
 
 $color-branding: (
   primary: #3dc154,
@@ -45,21 +48,25 @@ $color-neutral: (
   gray: gray
 );
 
-$color-borders: (
-    primary: '#cdcdcd'
-);
-
-$color-text: map-get($color-neutral, black);
-
 /* layout
 ---------------------------------------------------------------*/
 
-$layout-width: 960px;
+$layout-desktop: 960px;
 
 /* $mq
 ---------------------------------------------------------------*/
 
-$mq-desktop : 1024px;
-$mq-tablet : 800px;
-$mq-mobile : 601px;
-$mq-mobile-sm : 400px;
+$mq-desktop: 1024px;
+$mq-tablet: 800px;
+$mq-mobile: 601px;
+$mq-mobile-sm: 400px;
+
+/* $padding-margins
+---------------------------------------------------------------*/
+
+$s02: 2px;
+$s05: 5px;
+$s1: 10px;
+$s2: 20px;
+$s3: 30px; 
+$s4: 40px;
