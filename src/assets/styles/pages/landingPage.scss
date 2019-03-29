@@ -1,18 +1,10 @@
 @import "../core/main";
 
 .header {
-  padding: $s3;
-
-  p {
-    margin: 0;
-    font-size: $font-size-hf;
-    font-family: $font-exo;
-  }
-
-  .header-logo {
-    height: 40px;
-  }
   .social-media {
+    display: flex;
+    align-items: center;
+
     .social-media-logo {
       font-size: $font-size-social;
       padding: $s1;
@@ -38,8 +30,10 @@
     p {
       line-height: 28px;
     }
-    .primary-button{
-      padding: $s2 $s4;
+    .primary-button {
+      margin: $s1 0 0 0;
+      padding: 15px 37px;
+      border-radius: 40px;
     }
   }
 
@@ -65,13 +59,4 @@
   }
 }
 
-.footer {
-  padding: $s3;
-  p {
-    margin: 0;
-    font-size: $font-size-hf;
-  }
-  .footer-logo {
-    height: 20px;
-  }
-}
+

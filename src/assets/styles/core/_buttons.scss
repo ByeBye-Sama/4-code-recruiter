@@ -1,5 +1,34 @@
-.primary-button{
-  border: none;
-  background: $button-bg-prim;
-  color: $button-color-white;
+.button {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+  }
+
+  &.primary-button {
+    border:none;
+    box-shadow: 0px 0px 0px 3px $button-bg-prim;
+    background: $button-bg-prim;
+    color: $color-scale0;
+    font-size: $button-font-size;
+    font-weight: $font-bold;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $color-scale0;
+      color: $button-bg-prim;
+      
+    }
+  }
 }

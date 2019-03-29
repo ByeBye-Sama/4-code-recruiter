@@ -22,17 +22,6 @@ $font-size-h6: 1.6rem;
 $font-bold: 700;
 $font-bolder: 1000;
 
-/*--typography---------------------------------------------------------------*/
-
-/*--buttons---------------------------------------------------------------*/
-
-$button-bg-prim: map-get($color-branding, primary);
-$button-bg-sec: map-get($color-branding , secondary);
-
-$button-color-white: map-get($color-neutral, scale0);
-
-/*--forms---------------------------------------------------------------*/
-
 /*--color---------------------------------------------------------------*/
 
 $color-fonts: (
@@ -50,7 +39,7 @@ $color-branding: (
 
 $color-semantic: (
   error: #ff0000,
-  warning: #ffd0a5
+  warning: #ffd0a5,
   success: #059d2b,
   information: #5075ea
 );
@@ -59,6 +48,19 @@ $color-neutral: (
   scale0: #fff,
   scale5: #000
 );
+
+$color-scale0: map-get($color-neutral, scale0);
+
+/*--buttons---------------------------------------------------------------*/
+
+$button-bg-prim: map-get($color-branding, primary);
+$button-bg-sec: map-get($color-branding, secondary);
+
+$button-color-white: map-get($color-neutral, scale0);
+
+$button-font-size: 18px; 
+
+/*--forms---------------------------------------------------------------*/
 
 /* layout
 ---------------------------------------------------------------*/
