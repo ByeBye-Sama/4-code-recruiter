@@ -25,10 +25,48 @@
 
 .main {
   margin: $s4 0;
+  padding: 0 $s6;
+
+  .section-top {
+    padding: 0 $s1 0 $s3;
+    h2 {
+      $font-size-h2: 4.2rem;
+      font-size: $font-size-h2;
+      font-weight: $font-bold;
+      line-height: 55px;
+    }
+    p {
+      line-height: 28px;
+    }
+    .primary-button{
+      padding: $s2 $s4;
+    }
+  }
+
+  .section-bottom {
+    padding: $s2 $s1 $s3 $s3;
+    h3 {
+      $font-size-h3: 3.8rem;
+      font-size: $font-size-h3;
+      font-weight: $font-bold;
+    }
+    p {
+      width: 75%;
+      line-height: 28px;
+    }
+    .img-programs {
+      li {
+        padding: 15px;
+        img {
+          height: 40px;
+        }
+      }
+    }
+  }
 }
 
 .footer {
-  padding: $s4;
+  padding: $s3;
   p {
     margin: 0;
     font-size: $font-size-hf;

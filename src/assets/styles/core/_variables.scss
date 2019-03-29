@@ -11,23 +11,36 @@ $font-arial: "Arial";
 $font-size-base: 62.5%; /* 10px*/
 $font-size-global: 1.6rem;
 $font-size-hf: 1.2rem;
-$font-size-social: 2.0rem;
+$font-size-social: 2.5rem;
+$font-size-h1: 3.2rem;
+$font-size-h2: 2.6rem;
+$font-size-h3: 2.4rem;
+$font-size-h4: 2rem;
+$font-size-h5: 1.8rem;
+$font-size-h6: 1.6rem;
+
+$font-bold: 700;
+$font-bolder: 1000;
 
 /*--typography---------------------------------------------------------------*/
 
 /*--buttons---------------------------------------------------------------*/
 
-$button-bg-primary: "";
-$button-bg-secondary: "";
+$button-bg-prim: map-get($color-branding, primary);
+$button-bg-sec: map-get($color-branding , secondary);
+
+$button-color-white: map-get($color-neutral, scale0);
 
 /*--forms---------------------------------------------------------------*/
 
 /*--color---------------------------------------------------------------*/
 
 $color-fonts: (
-  primary: #0d3964
+  titles: #0d3964,
+  primary: #1b4f82
 );
 
+$color-txt-title: map-get($color-fonts, titles);
 $color-txt-prim: map-get($color-fonts, primary);
 
 $color-branding: (
@@ -36,16 +49,15 @@ $color-branding: (
 );
 
 $color-semantic: (
-  error: red,
-  warning: yellow,
-  success: green,
-  information: blue
+  error: #ff0000,
+  warning: #ffd0a5
+  success: #059d2b,
+  information: #5075ea
 );
 
 $color-neutral: (
-  white: white,
-  black: #5d5d5d,
-  gray: gray
+  scale0: #fff,
+  scale5: #000
 );
 
 /* layout
@@ -68,5 +80,8 @@ $s02: 2px;
 $s05: 5px;
 $s1: 10px;
 $s2: 20px;
-$s3: 30px; 
+$s3: 30px;
 $s4: 40px;
+$s5: 50px;
+$s6: 60px;
+$s7: 70px;

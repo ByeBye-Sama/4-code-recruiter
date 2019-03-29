@@ -12,18 +12,33 @@
   .container {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-  }
-  .social-media {
-    display: flex;
     align-items: center;
+    .social-media {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.main {
+  .container {
+    .section-top{
+      display: flex;
+      justify-content: space-between;
+    }
+    .section-bottom{
+      .img-programs{
+        display: flex;
+        
+      }
+    }
   }
 }
 
 .footer {
   .container {
     display: flex;
-    justify-content:  space-between;
+    justify-content: space-between;
     align-items: center;
   }
 }
