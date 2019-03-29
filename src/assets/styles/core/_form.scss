@@ -1,0 +1,19 @@
+.form {
+  width: 100%;
+  height: $s4;
+  margin: $s05 0 $s2 0;
+  padding: $s1;
+  font-size: $font-size-global;
+  color: $color-scale3;
+  border-radius: 5px;
+  border: 1px solid $color-scale1;
+
+  &.primary-form {
+    &:active,
+    &:focus {
+      border: 1px solid $form-prim;
+      box-shadow: 0 0 7px -3px $form-prim;
+      transition: all .5s ease;
+    }
+  }
+}

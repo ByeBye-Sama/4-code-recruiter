@@ -42,6 +42,20 @@
   }
 }
 
+.main-login {
+  .container {
+    .login-box {
+      width: 300px;
+      margin: auto;
+      .password {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
 .footer {
   padding: $s3;
 
@@ -53,7 +67,7 @@
     p {
       margin: 0;
       font-size: $font-size-hf;
-      a{
+      a {
         text-decoration: underline;
       }
     }
@@ -62,5 +76,3 @@
     }
   }
 }
-
-

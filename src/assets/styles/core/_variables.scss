@@ -10,6 +10,7 @@ $font-arial: "Arial";
 
 $font-size-base: 62.5%; /* 10px*/
 $font-size-global: 1.6rem;
+$font-size-littlest: 1rem;
 $font-size-hf: 1.2rem;
 $font-size-social: 2.5rem;
 $font-size-h1: 3.2rem;
@@ -24,6 +25,11 @@ $font-bolder: 1000;
 
 /*--color---------------------------------------------------------------*/
 
+$color-branding: (
+  primary: #3dc154,
+  secondary: #ffba7a
+);
+
 $color-fonts: (
   titles: #0d3964,
   primary: #1b4f82
@@ -31,11 +37,7 @@ $color-fonts: (
 
 $color-txt-title: map-get($color-fonts, titles);
 $color-txt-prim: map-get($color-fonts, primary);
-
-$color-branding: (
-  primary: #3dc154,
-  secondary: #ffba7a
-);
+$color-txt-sec: map-get($color-branding, primary);
 
 $color-semantic: (
   error: #ff0000,
@@ -46,10 +48,17 @@ $color-semantic: (
 
 $color-neutral: (
   scale0: #fff,
+  scale1: #dedede,
+  scale2: #7f7f7f,
+  scale3: #5d5d5d,
   scale5: #000
 );
 
 $color-scale0: map-get($color-neutral, scale0);
+$color-scale1: map-get($color-neutral, scale1);
+$color-scale2: map-get($color-neutral, scale2);
+$color-scale3: map-get($color-neutral, scale3);
+$color-scale5: map-get($color-neutral, scale5);
 
 /*--buttons---------------------------------------------------------------*/
 
@@ -58,9 +67,11 @@ $button-bg-sec: map-get($color-branding, secondary);
 
 $button-color-white: map-get($color-neutral, scale0);
 
-$button-font-size: 18px; 
+$button-font-size: 18px;
 
 /*--forms---------------------------------------------------------------*/
+
+$form-prim: map-get($color-branding, primary);
 
 /* layout
 ---------------------------------------------------------------*/
@@ -70,7 +81,6 @@ $layout-desktop: 960px;
 /* $mq
 ---------------------------------------------------------------*/
 
-$mq-desktop: 1024px;
 $mq-tablet: 800px;
 $mq-mobile: 601px;
 $mq-mobile-sm: 400px;

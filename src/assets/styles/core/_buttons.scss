@@ -28,6 +28,7 @@
     &:focus {
       background: $color-scale0;
       color: $button-bg-prim;
+      transition: all .3s ease;
       
     }
   }

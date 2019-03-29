@@ -5,7 +5,12 @@ p {
   color: $color-txt-prim;
 }
 
+b{
+  font-weight: $font-bold;
+}
+
 a{
+  font-family: $font-arial;
   color: $color-txt-prim;
   text-decoration: none;
 }
@@ -50,4 +55,21 @@ h5{
 h6{
   font-size: $font-size-h6;
   line-height: 22px;
+}
+
+.txt-little{
+  margin: $s05 0;
+  font-size: $font-size-hf;
+  color: $color-scale3;
+}
+
+.txt-littlest{
+  margin: $s02 0;
+  font-size: $font-size-littlest;
+  color: $color-scale2;
+}
+
+.primary-link{
+  color: $color-txt-sec;
+  font-weight: $font-bold;
 }
