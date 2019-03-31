@@ -6,8 +6,15 @@ html{
   box-sizing: border-box;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]{
   position: absolute;
-  opacity: 0;
+  opacity: 0; 
   cursor: pointer;
 }
+
+textarea{
+  font-family: $font-arial;
+}
+
+
+

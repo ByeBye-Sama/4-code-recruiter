@@ -29,8 +29,70 @@
     <main class="main-register">
       <div class="container">
         <form class="register-box">
-          <div></div>
-          <div></div>
+          <h1>Registrate</h1>
+          <div class="personal-form">
+            <p class="txt-little"><b>Datos personales</b></p>
+            <p class="txt-little">Por favor completa tus datos</p>
+            <p></p>
+            <div class="personal-data">
+              <div class="data-field">
+                <p class="txt-littlest">Nombre</p>
+                <input class="form primary-form little-form" type="text">
+              </div>
+              <div class="data-field">
+                <p class="txt-littlest">Apellido</p>
+                <input class="form primary-form little-form" type="text">
+              </div>
+              <div class="data-field">
+                <p class="txt-littlest">Telefono-Celular</p>
+                <input class="form primary-form little-form" type="text">
+              </div>
+              <div class="data-field">
+                <p class="txt-littlest">Direccion</p>
+                <input class="form primary-form little-form" type="text">
+              </div>
+              <div class="gender-field">
+                <p class="txt-littlest">Usuario</p>
+                <div class="radio-list">
+                  <label class="radio-type">F
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="primary-radio"></span>
+                  </label>
+                  <label class="radio-type">M
+                    <input type="radio" name="radio">
+                    <span class="primary-radio"></span>
+                  </label>
+                  <label for=""></label>
+                </div>
+              </div>
+              <div class="data-field">
+                <p class="txt-littlest">Usuario</p>
+                <input class="form primary-form little-form" type="text">
+              </div>
+              <div class="data-field">
+                <p class="txt-littlest">Contraseña</p>
+                <input class="form primary-form little-form" type="password">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="career-form">
+            <p class="txt-little"><b>Datos de la carrera</b></p>
+            <p class="txt-little">Por favor completa tus datos</p>
+            <p></p>
+            <p class="txt-littlest">Especialidad</p>
+            <select class="form primary-form little-form" name="">
+              <option disabled selected>Selecciona una opcion</option>
+              <option value="0">Peru</option>
+              <option value="1">Colombia</option>
+              <option value="2">Argentina</option>
+            </select>
+            <p class="txt-littlest">Cuentanos sobre ti</p>
+            <textarea class="form primary-form big-form" rows="4" cols="50" maxlength="300">
+            </textarea>
+          </div>
+
           <div class="socialnet-form">
             <p class="txt-little"><b>Redes sociales</b></p>
             <p class="txt-little">Por favor completa tus datos</p>
@@ -47,9 +109,12 @@
             <input class="form primary-form" type="text">
           </div>
 
-        </form>
-      </div>
+          <button class="button primary-button middle-button">Registrar</button>
 
+        </form>
+
+
+      </div>
     </main>
 
     <!--Footer------------------------------------>

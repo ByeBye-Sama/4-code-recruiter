@@ -16,7 +16,7 @@
   }
 
   &.primary-button {
-    border:none;
+    border: none;
     box-shadow: 0px 0px 0px 3px $button-bg-prim;
     background: $button-bg-prim;
     color: $color-scale0;
@@ -28,8 +28,14 @@
     &:focus {
       background: $color-scale0;
       color: $button-bg-prim;
-      transition: all .3s ease;
-      
+      transition: all 0.3s ease;
     }
+  }
+
+  &.middle-button {
+    width: 100%;
+    padding: 7px 0;
+    margin: $s4 0 $s2 0;
+    border-radius: 5px;
   }
 }

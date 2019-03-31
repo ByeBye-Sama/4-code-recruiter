@@ -25,6 +25,11 @@
     .header-logo {
       height: 40px;
     }
+
+    .about-us {
+      display: flex;
+      
+    }
   }
 }
 
@@ -56,11 +61,24 @@
   }
 }
 
-.main-register{
+.main-register {
   .container {
-    .register-box{
+    .register-box {
       width: 470px;
       margin: auto;
+      .personal-form { 
+        .personal-data {
+          display: flex;
+          flex-wrap: wrap; 
+          .gender-field{
+            .radio-list{
+              display: flex
+
+            }
+          }
+          
+        }
+      }
     }
   }
 }

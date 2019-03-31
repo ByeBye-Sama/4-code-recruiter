@@ -1,0 +1,13 @@
+@import "../core/main";
+
+.header{
+  border-bottom: 1px solid $color-scale1;
+  .container{
+    .about-us{
+      li{
+        margin: 0 0 0 $s4;
+      }
+    }
+  }
+}
+

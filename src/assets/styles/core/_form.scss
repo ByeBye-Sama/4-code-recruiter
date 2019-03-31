@@ -13,7 +13,16 @@
     &:focus {
       border: 1px solid $form-prim;
       box-shadow: 0 0 7px -3px $form-prim;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
     }
   }
+
+  &.big-form {
+    height: $s10;
+  } 
+
+  &.little-form {
+    font-size: $font-size-hf;
+  }
+
 }

@@ -1,0 +1,58 @@
+.radio-type {
+  display: block;
+  position: relative;
+  padding: 0 0 0 15px;
+  margin: $s05 $s2 $s2 0;
+  cursor: pointer;
+  font-size: $font-size-hf;
+  font-family: $font-arial;
+  color: $color-scale2;
+  user-select: none;
+
+  & input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .primary-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: $color-scale0;
+    border: 1px solid $color-scale1;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  &:hover input ~ .primary-radio,
+  &:focus input ~ .primary-radio {
+    background-color: $color-scale1;
+    transition: all 0.5s ease;
+  }
+
+  & input:checked ~ .primary-radio {
+    background-color: $radio-bg-prim;
+    transition: all 0.5s ease;
+  }
+
+  & input:checked ~ .primary-radio:after {
+    display: block;
+  }
+
+  & .primary-radio:after {
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $color-scale0;
+  }
+}

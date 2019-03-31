@@ -1,1 +1,35 @@
 @import "../core/main";
+
+.main-register {
+  margin: $s2 0 $s30 0 ;
+  .container {
+    
+    .register-box {
+      .personal-form,
+      .career-form,
+      .socialnet-form {
+        margin: $s3 0;
+      }
+
+      .personal-form {
+        .personal-data {
+          margin: 0 -10px;
+          .data-field {
+            padding: 0 $s1;
+            .little-form {
+              /*--change this for 50%---------------------------------------------------------------*/
+              width: 225px;
+            }
+          }
+          .gender-field {
+            padding: 0 $s1;
+            width: 100%;
+          }
+        }
+      }
+      .middle-button{
+        margin: 0;
+      }
+    }
+  }
+}
