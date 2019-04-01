@@ -28,7 +28,6 @@
 
     .about-us {
       display: flex;
-      
     }
   }
 }
@@ -66,18 +65,35 @@
     .register-box {
       width: 470px;
       margin: auto;
-      .personal-form { 
+      .personal-form {
         .personal-data {
           display: flex;
-          flex-wrap: wrap; 
-          .gender-field{
-            .radio-list{
-              display: flex
-
+          flex-wrap: wrap;
+          .gender-field {
+            .radio-list {
+              display: flex;
             }
           }
-          
         }
+      }
+    }
+  }
+}
+
+.main-people {
+  .container {
+    display: flex;
+
+    .aside-people {
+      width: 20%;
+    }
+    .section-people {
+      padding: 0 0 $s20 0;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      .card-layout {
+        width: 25%;
       }
     }
   }

@@ -61,6 +61,14 @@ $color-scale2: map-get($color-neutral, scale2);
 $color-scale3: map-get($color-neutral, scale3);
 $color-scale5: map-get($color-neutral, scale5);
 
+$color-hover: (
+  primary: rgba(61, 193, 84, 0.16),
+  secondary: rgba(255, 186, 122, 0.16)
+);
+
+$color-hover-prim: map-get($color-hover, primary);
+$color-hover-sec: map-get($color-hover, secondary);
+
 /*--buttons---------------------------------------------------------------*/
 
 $button-bg-prim: map-get($color-branding, primary);
