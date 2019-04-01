@@ -37,29 +37,29 @@
             <div class="personal-data">
               <div class="data-field">
                 <p class="txt-littlest">Nombre</p>
-                <input class="form primary-form little-form" type="text">
+                <input required class="js_name form primary-form little-form" type="text">
               </div>
               <div class="data-field">
                 <p class="txt-littlest">Apellido</p>
-                <input class="form primary-form little-form" type="text">
+                <input required class="js_lastname form primary-form little-form" type="text">
               </div>
               <div class="data-field">
                 <p class="txt-littlest">Telefono-Celular</p>
-                <input class="form primary-form little-form" type="text">
+                <input required pattern="\d{1,9}" class="js_phone form primary-form little-form" type="text">
               </div>
               <div class="data-field">
                 <p class="txt-littlest">Direccion</p>
-                <input class="form primary-form little-form" type="text">
+                <input required class="js_direction form primary-form little-form" type="text">
               </div>
               <div class="gender-field">
-                <p class="txt-littlest">Usuario</p>
+                <p class="txt-littlest">Gender</p>
                 <div class="radio-list">
                   <label class="radio-type">F
-                    <input type="radio" checked="checked" name="radio">
+                    <input class="js_radio-a" type="radio" checked="checked" name="radio">
                     <span class="primary-radio"></span>
                   </label>
                   <label class="radio-type">M
-                    <input type="radio" name="radio">
+                    <input class="js_radio-b" type="radio" name="radio">
                     <span class="primary-radio"></span>
                   </label>
                   <label for=""></label>
@@ -67,11 +67,11 @@
               </div>
               <div class="data-field">
                 <p class="txt-littlest">Usuario</p>
-                <input class="form primary-form little-form" type="text">
+                <input required class="js_user form primary-form little-form" type="text">
               </div>
               <div class="data-field">
                 <p class="txt-littlest">Contraseña</p>
-                <input class="form primary-form little-form" type="password">
+                <input required class="js_password form primary-form little-form" type="password">
               </div>
             </div>
 
@@ -82,14 +82,14 @@
             <p class="txt-little">Por favor completa tus datos</p>
             <p></p>
             <p class="txt-littlest">Especialidad</p>
-            <select class="form primary-form little-form" name="">
+            <select required class="js_career form primary-form little-form" name="">
               <option disabled selected>Selecciona una opcion</option>
               <option value="0">Peru</option>
               <option value="1">Colombia</option>
               <option value="2">Argentina</option>
             </select>
             <p class="txt-littlest">Cuentanos sobre ti</p>
-            <textarea class="form primary-form big-form" rows="4" cols="50" maxlength="300">
+            <textarea required class="js_about-me form primary-form big-form" rows="4" cols="50" maxlength="300">
             </textarea>
           </div>
 
@@ -97,19 +97,19 @@
             <p class="txt-little"><b>Redes sociales</b></p>
             <p class="txt-little">Por favor completa tus datos</p>
             <p></p>
-            <p class="txt-littlest">Facebook</p>
-            <input class="form primary-form" type="text">
+            <p class="txt-littlest">Instagram</p>
+            <input required class="js_instagram form primary-form" type="text">
             <p class="txt-littlest">Twitter</p>
-            <input class="form primary-form" type="text">
+            <input required class="js_twitter form primary-form" type="text">
             <p class="txt-littlest">Github</p>
-            <input class="form primary-form" type="text">
+            <input required class="js_linkedin form primary-form" type="text">
             <p class="txt-littlest">Linkedin</p>
-            <input class="form primary-form" type="text">
+            <input required class="js_linkedin form primary-form" type="text">
             <p class="txt-littlest">Codepen</p>
-            <input class="form primary-form" type="text">
+            <input required class="js_codepen form primary-form" type="text">
           </div>
 
-          <button class="button primary-button middle-button">Registrar</button>
+          <button type="submit" class="js_register-button button primary-button middle-button">Registrar</button>
 
         </form>
 
@@ -142,6 +142,60 @@
       messagingSenderId: "584036887484"
     };
     firebase.initializeApp(config);
+
+    function getValues() {
+      let name,
+        lastname,
+        phone,
+        direction,
+        genderF,
+        genderM,
+        user,
+        password,
+        career,
+        aboutMe,
+        instagram,
+        twitter,
+        github,
+        linkedin,
+        codepen;
+
+      name = document.querySelector('.js_name');
+      lastname = document.querySelector('.js_lastname');
+      phone = document.querySelector('.js_phone');
+      direction = document.querySelector('.js_direction');
+      genderF = document.querySelector('.js_radio-a');
+      genderM = document.querySelector('.js_radio-b');
+      user = document.querySelector('.js_user');
+      password = document.querySelector('.js_password');
+      career = document.querySelector('.js_career');
+      aboutMe = document.querySelector('.js_about-me');
+      instagram = document.querySelector('.js_instagram');
+      twitter = document.querySelector('.js_twitter');
+      github = document.querySelector('.js_github');
+      linkedin = document.querySelector('.js_linkedin');
+      codepen = document.querySelector('.js_codepen');
+    }
+
+    function registerUser(email, password) {
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+        .catch(function (error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // ...
+        });
+    }
+
+    function submitForm(e) {
+
+      document.querySelector('.js_button').addEventListener('click', function (e) {
+        console.log('e', e)
+        e.preventDefault();
+        console.log('click', e)
+      });
+    }
+
   </script>
 </body>
 
