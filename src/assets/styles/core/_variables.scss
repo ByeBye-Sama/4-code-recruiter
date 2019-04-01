@@ -11,6 +11,7 @@ $font-arial: "Arial";
 $font-size-base: 62.5%; /* 10px*/
 $font-size-global: 1.6rem;
 $font-size-littlest: 1rem;
+$font-size-little: 1.1rem;
 $font-size-hf: 1.2rem;
 $font-size-list: 1.4rem;
 $font-size-social: 2.5rem;
@@ -69,6 +70,20 @@ $color-hover: (
 $color-hover-prim: map-get($color-hover, primary);
 $color-hover-sec: map-get($color-hover, secondary);
 
+$color-networks: (
+  instagram: #566cfe,
+  twitter: #007ebf,
+  github: #000000,
+  linkedin: #1a2e88,
+  codepen: #000000
+);
+
+$color-instagram: map-get($color-networks, instagram);
+$color-twitter: map-get($color-networks, twitter);
+$color-github: map-get($color-networks, github);
+$color-linkedin: map-get($color-networks, linkedin);
+$color-codepen: map-get($color-networks, codepen);
+
 /*--buttons---------------------------------------------------------------*/
 
 $button-bg-prim: map-get($color-branding, primary);
@@ -89,6 +104,10 @@ $check-bg-prim: map-get($color-branding, primary);
 /*--radio---------------------------------------------------------------*/
 
 $radio-bg-prim: map-get($color-branding, primary);
+
+/*--radio---------------------------------------------------------------*/
+
+$card-prim: map-get($color-branding, primary);
 
 /* layout
 ---------------------------------------------------------------*/

@@ -1,5 +1,138 @@
-.card{
-  height: 220px;
-  border: 1px solid $color-scale1;
-  border-radius: $s1;
+.card-layout {
+  height: 222px;
+
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+
+    &.is-flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      border: 1px solid $color-scale1;
+      border-radius: $s1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .card-front {
+      /* start of effects on card
+    ---------------------------------------------------------------*/
+      &:hover,
+      &:hover img {
+        border: 1px solid $card-prim;
+        box-shadow: 0 0 10px -5px $color-scale3;
+        transition: all 0.5s ease;
+      }
+
+      &:hover img {
+        border: 2px solid $card-prim;
+      }
+
+      &:hover .card-title,
+      &:hover .card-sub,
+      &:hover .icon {
+        color: $card-prim;
+        transition: all 0.5s ease;
+      }
+
+      &:hover .text-black {
+        color: $color-scale5;
+        transition: all 0.5s ease;
+      }
+
+      &:hover .card-networks {
+        border-top: 1px solid $card-prim;
+        transition: all 0.5s ease;
+      }
+
+      &:hover .twitter {
+        color: $color-twitter;
+      }
+
+      &:hover .instagram {
+        color: $color-instagram;
+      }
+
+      &:hover .github {
+        color: $color-github;
+      }
+
+      &:hover .linkedin {
+        color: $color-linkedin;
+      }
+
+      &:hover .codepen {
+        color: $color-codepen;
+      }
+
+      /* end of effects on card
+    ---------------------------------------------------------------*/
+
+      img {
+        height: 68px;
+        margin: $s3 0 0 0;
+        border: 1px solid $color-scale1;
+        border-radius: 50%;
+      }
+
+      .card-title {
+        margin: $s1 0 $s05 0;
+        font-size: $font-size-list;
+        font-weight: $font-bold;
+        color: $color-scale3;
+      }
+
+      .card-sub {
+        font-size: $font-size-little;
+        color: $color-scale2;
+      }
+
+      .text-black {
+        margin: 0 0 0 $s05;
+      }
+
+      .card-networks {
+        margin: $s05 0 0 0;
+        padding: $s1 0 0 0;
+        border-top: 1px solid $color-scale1;
+      }
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      padding: $s3 $s2;
+      /* start of effects on card
+    ---------------------------------------------------------------*/
+      &:hover {
+        border: 1px solid $card-prim;
+        box-shadow: 0 0 10px -5px $color-scale3;
+        transition: all 0.5s ease;
+      }
+
+      /* end of effects on card
+    ---------------------------------------------------------------*/
+
+      .card-detail {
+        margin: 0 0 $s4 0;
+        font-size: $font-size-hf;
+        color: $color-scale2;
+        line-height: 17px;
+      }
+
+      .button {
+        width: 100%;
+        border-radius: 5px;
+        padding: $s05 0; 
+        font-size: $font-size-hf;     
+      }
+    }
+  }
 }

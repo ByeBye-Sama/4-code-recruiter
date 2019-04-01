@@ -94,6 +94,19 @@
       flex-wrap: wrap;
       .card-layout {
         width: 25%;
+        .card {
+          .card-front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .phone {
+              display: flex;
+            }
+            .card-networks {
+              display: flex;
+            }
+          }
+        }
       }
     }
   }

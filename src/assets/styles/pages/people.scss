@@ -22,7 +22,7 @@
       .locations {
         li {
           display: inline-block;
-          width: 100%;
+          width: 90%;
           padding: $s1 0;
           border-radius: 5px;
           margin: $s02 0;
@@ -45,9 +45,13 @@
 
     .section-people {
       margin: $s2 0 0 $s1;
+
+      /*--edit later---------------------------------------------------------------*/
+
       .card-layout {
         margin: 0 0 $s2 0;
         padding: 0 $s1;
+        perspective: 600px;
       }
     }
   }
