@@ -1,0 +1,50 @@
+@import "../core/main";
+
+.header {
+  border-bottom: 1px solid $color-scale1;
+  .container {
+    .about-us {
+      li {
+        margin: 0 0 0 $s4;
+      }
+    }
+  }
+}
+
+.main-detail {
+  p {
+    color: $color-scale2;
+  }
+  .container {
+    .button{
+      font-size: $font-size-list;
+      margin: 0 $s2 $s2 0;
+      padding: $s02 $s1;
+      border-radius: $s05;
+    }
+    .section-detail {
+      margin: $s2 0 0 $s2;
+      padding: 0 0 $s20 0;
+      .personal-information {
+        margin: $s2 0 0 0;
+        img {
+          height: 112px;
+        }
+        .personal-text {
+          padding: 0 0 0 $s2;
+          h1 {
+            margin: $s05 0 0 0;
+            color: $color-scale3;
+          }
+          .profession {
+            margin: 0;
+            font-size: $font-size-list;
+          }
+        }
+        .phone {
+          margin: $s1 0 $s05 0;
+        }
+      }
+    }
+  }
+}

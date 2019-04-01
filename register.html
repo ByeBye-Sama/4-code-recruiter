@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./dist/assets/styles/register.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <title>Login</title>
+  <title>Register</title>
 </head>
 
 <body>
@@ -129,6 +129,20 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDsThm6PoJMrQe7TKlP5daVuePDSd6vsC0",
+      authDomain: "code-recruiter.firebaseapp.com",
+      databaseURL: "https://code-recruiter.firebaseio.com",
+      projectId: "code-recruiter",
+      storageBucket: "code-recruiter.appspot.com",
+      messagingSenderId: "584036887484"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 
 </html>

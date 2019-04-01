@@ -84,11 +84,10 @@
   .container {
     display: flex;
 
-    .aside-people {
+    .aside {
       width: 20%;
     }
     .section-people {
-      padding: 0 0 $s20 0;
       width: 80%;
       display: flex;
       flex-wrap: wrap;
@@ -108,6 +107,66 @@
           }
         }
       }
+    }
+  }
+}
+
+.main-detail {
+  .container {
+    display: flex;
+    .aside {
+      width: 20%;
+    }
+    .section-detail {
+      width: 80%;
+      .personal-information {
+        display: flex;
+        .phone {
+          display: flex;
+        }
+        .card-networks {
+          display: flex;
+        }
+      }
+      .txt-detail {
+        width: 95%;
+      }
+      .skills {
+        .skill-types{
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+.aside {
+  padding: $s2 0 0 $s2;
+  border-right: 1px solid $color-scale1;
+  h6 {
+    margin: 0 0 $s1 0;
+  }
+  .locations {
+    li {
+      display: inline-block;
+      width: 90%;
+      padding: $s1 0;
+      border-radius: 5px;
+      margin: $s02 0;
+
+      a {
+        padding: 0 0 0 $s1;
+      }
+    }
+
+    li:hover,
+    li:focus {
+      background: $color-hover-sec;
+    }
+
+    li:active {
+      background: $color-hover-prim;
     }
   }
 }

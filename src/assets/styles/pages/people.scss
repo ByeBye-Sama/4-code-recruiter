@@ -13,40 +13,9 @@
 
 .main-people {
   .container {
-    .aside-people {
-      padding: $s2 0 0 0;
-      border-right: 1px solid $color-scale1;
-      h6 {
-        margin: 0 0 $s1 0;
-      }
-      .locations {
-        li {
-          display: inline-block;
-          width: 90%;
-          padding: $s1 0;
-          border-radius: 5px;
-          margin: $s02 0;
-
-          a {
-            padding: 0 0 0 $s1;
-          }
-        }
-
-        li:hover,
-        li:focus {
-          background: $color-hover-sec;
-        }
-
-        li:active {
-          background: $color-hover-prim;
-        }
-      }
-    }
-
     .section-people {
       margin: $s2 0 0 $s1;
-
-      /*--edit later---------------------------------------------------------------*/
+      padding: 0 0 $s20 0;
 
       .card-layout {
         margin: 0 0 $s2 0;
